@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22C65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Market" representedClassName="Market" syncable="YES" codeGenerationType="class">
+        <attribute name="marketName" optional="YES" attributeType="String"/>
+        <attribute name="quotes" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[Quote]"/>
+    </entity>
+    <entity name="Quote" representedClassName="Quote" syncable="YES">
+        <attribute name="currency" optional="YES" attributeType="String"/>
+        <attribute name="isLiked" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="last" optional="YES" attributeType="String"/>
+        <attribute name="myMarket" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="Market"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="readableLastChangePercent" optional="YES" attributeType="String"/>
+        <attribute name="symbol" optional="YES" attributeType="String"/>
+        <attribute name="variationColor" optional="YES" attributeType="String"/>
+    </entity>
+</model>
